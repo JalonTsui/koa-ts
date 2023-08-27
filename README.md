@@ -32,3 +32,8 @@ preset:"ts-jest"
 1.完成所有配置后，可以做一个像 vite 一样的 npm 指令，自动生成一个开发环境
 2.后端需要打包吗，怎么样打包
 ```
+
+# 连接 MySQL 的框架
+
+sequelize
+mysql2

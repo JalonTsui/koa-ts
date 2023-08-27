@@ -4,8 +4,11 @@ dotenv.config();
 import Koa from "koa";
 import router from "./router";
 import type { Server } from "http";
+import { accessLoggerMW } from "./middleware/accessware";
 
 const app = new Koa();
+
+app.use(accessLoggerMW);
 
 app.use(router.routes());
 
